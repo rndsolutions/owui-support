@@ -2,6 +2,8 @@
 import "@fontsource/inter";
 
 export default function OpenWebUIPage() {
+  console.log("OpenWebUIPage component is rendering");
+  console.log("Checking if component is rendering correctly");
   return (
     <div className="min-h-screen bg-white text-neutral-900 font-sans">
       {/* Header */}
