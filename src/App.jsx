@@ -125,7 +125,7 @@ export default function OpenWebUIPage() {
         <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 text-sm">
           <div>
             <h3 className="font-semibold mb-4 text-white text-base">R&amp;D Solutions</h3>
-            <p className="text-neutral-400 mb-4">Empowering enterprises to innovate with AI using OpenWebUI.</p>
+            <p className="text-neutral-400 mb-4">Empowering enterprises to innovate with AI through our advanced platform.</p>
             <p className="text-neutral-500 text-xs">ISO 27001 Ready • GDPR Compliant • AWS Powered</p>
           </div>
           <div>
