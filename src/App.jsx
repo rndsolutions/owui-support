@@ -35,28 +35,8 @@ export default function OpenWebUIPage() {
       <div className="h-1 bg-gray-200"></div>
       <section className="py-24 px-6 bg-white" id="contact">
 
-        {/* Why Section*/}
-        <section id="why" className="py-24 px-6 max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl font-semibold mb-12 tracking-tight">Why Choose Our Managed Service?</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
-            <div>
-              <h3 className="text-xl font-medium mb-3">Enterprise-Grade Infrastructure</h3>
-              <p className="text-neutral-600">Deployed on AWS with ECS, RDS (PostgreSQL), and integrated CloudWatch monitoring. Our infrastructure is optimized for performance, scalability, and high availability. You get the robustness of cloud-native architecture without managing it yourself.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-medium mb-3">GDPR &amp; Security Aligned</h3>
-              <p className="text-neutral-600">Built with security first. ISO 27001-ready and fully compliant with data protection regulations. We implement encryption, access control, and continuous monitoring to ensure your data stays safe and compliant.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-medium mb-3">Fast Setup, No Overhead</h3>
-              <p className="text-neutral-600">We handle the stack, scaling, and updates—your team gets the power of OpenWebUI instantly. With zero setup time and proactive support, your teams can focus on using AI, not managing it.</p>
-            </div>
-          </div>
-        </section>
-        <div className="h-1 bg-gray-200"></div>
-
-        {/* AI Benefits */}
-        <section id="ai-benefits" className="py-24 px-6 bg-gradient-to-br from-white to-neutral-100">
+{/* AI Benefits */}
+<section id="ai-benefits" className="py-24 px-6 bg-gradient-to-br from-white to-neutral-100">
           <div className="max-w-6xl mx-auto text-center">
             <h2 className="text-4xl font-semibold mb-12 tracking-tight">The Power of AI for the Enterprise</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-left">
@@ -78,6 +58,43 @@ export default function OpenWebUIPage() {
         <div className="h-1 bg-gray-200"></div>
         {/* AI Benefits end */}
 
+      <Features
+          orientation="left"
+          imageSrc="/public/owui-dark.png"
+          title="Dark Mode Feature"
+          description="Experience our platform in dark mode, providing a sleek and modern interface that reduces eye strain and enhances focus."
+        />
+        <div className="h-1 bg-gray-200"></div>
+        <Features
+          orientation="right"
+          imageSrc="/public/owui-knowledges.png"
+          title="Knowledge Integration"
+          description="Seamlessly integrate your enterprise knowledge bases, making information readily accessible and actionable for your teams."
+        />
+        <div className="h-1 bg-gray-200"></div>
+        {/* New Section end */}
+
+        {/* Why Section*/}
+        <section id="why" className="py-24 px-6 max-w-6xl mx-auto text-center">
+          <h2 className="text-4xl font-semibold mb-12 tracking-tight">Why Choose Our Managed Service?</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
+            <div>
+              <h3 className="text-xl font-medium mb-3">Enterprise-Grade Infrastructure</h3>
+              <p className="text-neutral-600">Deployed on AWS with ECS, RDS (PostgreSQL), and integrated CloudWatch monitoring. Our infrastructure is optimized for performance, scalability, and high availability. You get the robustness of cloud-native architecture without managing it yourself.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-medium mb-3">GDPR &amp; Security Aligned</h3>
+              <p className="text-neutral-600">Built with security first. ISO 27001-ready and fully compliant with data protection regulations. We implement encryption, access control, and continuous monitoring to ensure your data stays safe and compliant.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-medium mb-3">Fast Setup, No Overhead</h3>
+              <p className="text-neutral-600">We handle the stack, scaling, and updates—your team gets the power of OpenWebUI instantly. With zero setup time and proactive support, your teams can focus on using AI, not managing it.</p>
+            </div>
+          </div>
+        </section>
+        <div className="h-1 bg-gray-200"></div>
+
+      
         {/* New Section */}
         {/* <section id="new-section" className="py-24 px-6 bg-gray-100 text-center">
           <div className="max-w-6xl mx-auto">
@@ -100,23 +117,7 @@ export default function OpenWebUIPage() {
           </div>
         </section> */}
 
-        <Features
-          orientation="left"
-          imageSrc="/public/owui-dark.png"
-          title="Dark Mode Feature"
-          description="Experience our platform in dark mode, providing a sleek and modern interface that reduces eye strain and enhances focus."
-        />
-        <div className="h-1 bg-gray-200"></div>
-        <Features
-          orientation="right"
-          imageSrc="/public/owui-knowledges.png"
-          title="Knowledge Integration"
-          description="Seamlessly integrate your enterprise knowledge bases, making information readily accessible and actionable for your teams."
-        />
-        <div className="h-1 bg-gray-200"></div>
-        {/* New Section end */}
-
-
+        
 
         {/* Pricing */}
         <section id="pricing" className="py-24 px-6 bg-white text-center">
