@@ -1,5 +1,6 @@
 
 import "@fontsource/inter";
+import { CarouselCustomArrows } from "./components/Carousel";
 
 export default function OpenWebUIPage() {
   console.log("OpenWebUIPage component is rendering");
@@ -37,7 +38,7 @@ export default function OpenWebUIPage() {
             <p className="text-neutral-600">Deployed on AWS with ECS, RDS (PostgreSQL), and integrated CloudWatch monitoring. Our infrastructure is optimized for performance, scalability, and high availability. You get the robustness of cloud-native architecture without managing it yourself.</p>
           </div>
           <div>
-            <h3 className="text-xl font-medium mb-3">GDPR & Security Aligned</h3>
+            <h3 className="text-xl font-medium mb-3">GDPR &amp; Security Aligned</h3>
             <p className="text-neutral-600">Built with security first. ISO 27001-ready and fully compliant with data protection regulations. We implement encryption, access control, and continuous monitoring to ensure your data stays safe and compliant.</p>
           </div>
           <div>
@@ -71,7 +72,7 @@ export default function OpenWebUIPage() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-semibold mb-12">See It In Action</h2>
           <div className="aspect-w-16 aspect-h-9 w-full rounded-xl overflow-hidden shadow-md border border-neutral-200 bg-neutral-100 flex items-center justify-center">
-            <p className="text-neutral-400">[ Video Placeholder ]</p>
+            <CarouselCustomArrows />
           </div>
         </div>
       </section>
@@ -87,7 +88,7 @@ export default function OpenWebUIPage() {
       <footer className="bg-neutral-900 text-white py-16 px-6">
         <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 text-sm">
           <div>
-            <h3 className="font-semibold mb-4 text-white text-base">R&D Solutions</h3>
+            <h3 className="font-semibold mb-4 text-white text-base">R&amp;D Solutions</h3>
             <p className="text-neutral-400 mb-4">Empowering enterprises to innovate with AI using OpenWebUI.</p>
             <p className="text-neutral-500 text-xs">ISO 27001 Ready • GDPR Compliant • AWS Powered</p>
           </div>
@@ -110,8 +111,8 @@ export default function OpenWebUIPage() {
           </div>
           <div>
             <h3 className="font-semibold mb-4 text-white text-base">Legal</h3>
-            <p className="text-neutral-400 mb-2">OpenWebUI is licensed under BSD 3-Clause. This service is independently managed and maintained by R&D Solutions.</p>
-            <p className="text-neutral-500 text-xs">© {new Date().getFullYear()} R&D Solutions. All rights reserved.</p>
+            <p className="text-neutral-400 mb-2">OpenWebUI is licensed under BSD 3-Clause. This service is independently managed and maintained by R&amp;D Solutions.</p>
+            <p className="text-neutral-500 text-xs">© {new Date().getFullYear()} R&amp;D Solutions. All rights reserved.</p>
           </div>
         </div>
       </footer>
