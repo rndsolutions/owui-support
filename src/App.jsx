@@ -49,10 +49,10 @@ export default function OpenWebUIPage() {
       <Hero videoUrl="https://www.youtube.com/embed/CDiVq3mPZc8?si=ARQb7RaqMQHSveb0" />
 
       <div className="h-1 bg-gray-200"></div>
-      <section className="py-24 px-6 bg-white" id="contact">
+      <section className="py-12 px-6 bg-white" id="contact">
 
         {/* AI Benefits */}
-        <section id="ai-benefits" className="py-24 px-6 bg-gradient-to-br from-white to-neutral-100">
+        <section id="ai-benefits" className="py-12 px-6 bg-gradient-to-br from-white to-neutral-100">
           <div className="max-w-6xl mx-auto text-center">
             <h2 className="text-4xl font-semibold mb-12 tracking-tight">The Power of AI for the Enterprise</h2>
             <p className="text-lg text-neutral-600 mb-8">Our AI solutions empower enterprises to innovate faster, streamline operations, and enhance decision-making processes.</p>
