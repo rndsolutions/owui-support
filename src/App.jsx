@@ -24,9 +24,10 @@ export default function OpenWebUIPage() {
           </nav>
         </div>
       </header>
+      
 
       {/* Hero Section */}
-      <Hero />
+      <Hero videoUrl="https://www.youtube.com/embed/CDiVq3mPZc8?si=ARQb7RaqMQHSveb0" />
       {/* <section className="relative px-6 py-32 text-center bg-gradient-to-br from-neutral-900 via-gray-900 to-black text-white overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] mix-blend-soft-light"></div>
         <div className="relative z-10">
@@ -41,8 +42,8 @@ export default function OpenWebUIPage() {
       <div className="h-1 bg-gray-200"></div>
       <section className="py-24 px-6 bg-white" id="contact">
 
-{/* AI Benefits */}
-<section id="ai-benefits" className="py-24 px-6 bg-gradient-to-br from-white to-neutral-100">
+        {/* AI Benefits */}
+        <section id="ai-benefits" className="py-24 px-6 bg-gradient-to-br from-white to-neutral-100">
           <div className="max-w-6xl mx-auto text-center">
             <h2 className="text-4xl font-semibold mb-12 tracking-tight">The Power of AI for the Enterprise</h2>
             <p className="text-lg text-neutral-600 mb-8">Our AI solutions empower enterprises to innovate faster, streamline operations, and enhance decision-making processes.</p>
@@ -65,7 +66,7 @@ export default function OpenWebUIPage() {
         <div className="h-1 bg-gray-200"></div>
         {/* AI Benefits end */}
 
-      <Features
+        <Features
           orientation="left"
           imageSrc="/public/owui-dark.png"
           title="Dark Mode Feature"
@@ -101,7 +102,7 @@ export default function OpenWebUIPage() {
         </section>
         <div className="h-1 bg-gray-200"></div>
 
-      
+
 
         {/* Pricing */}
         <section id="pricing" className="py-24 px-6 bg-white text-center">
