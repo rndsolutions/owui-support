@@ -1,6 +1,5 @@
 
 import "@fontsource/inter";
-import { CarouselCustomArrows } from "./components/Carousel";
 import PricingTable from "./components/PricingTable";
 
 export default function OpenWebUIPage() {
