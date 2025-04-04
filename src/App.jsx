@@ -58,22 +58,22 @@ export default function OpenWebUIPage() {
         <Features
           orientation="left"
           imageSrc="/public/owui-dark.png"
-          title="Team Collaboration & data insights"
-          description="Empower your teams to collaborate more effectively with AI-enhanced context and shared knowledge."
+          title="Smarter Teams, Sharper Decisions"
+          description="Enhance team productivity with shared AI memory, real-time suggestions, and easy access to organizational knowledge. AI adds context to every discussion, turning conversations into actionable insights."
         />
         <div className="h-1 bg-gray-200"></div>
         <Features
           orientation="right"
           imageSrc="/public/owui-knowledges.png"
-          title="Knowledge Integration"
-          description="Seamlessly integrate your enterprise knowledge bases, making information readily accessible and actionable for your teams."
+          title="Bring Enterprise Knowledge to Your AI Stack"
+          description="Whether it's PDFs, structured data, or internal wikis, unify your proprietary knowledge under a private AI interface. Enable secure, offline retrieval augmented generation (RAG) for compliant, high-trust environments. Instant knowledge. No leakage."
         />
         <div className="h-1 bg-gray-200"></div>
         <Features
           orientation="left"
           imageSrc="/public/owui-knowledges.png"
-          title="Empower Your AI Experience with Offline Custom LLM Support"
-          description="We offer a user-friendly, self-hosted interface that allows seamless integration and operation of custom Large Language Models (LLMs) without an internet connection. Its responsive design ensures optimal performance across devices, while features like full Markdown and LaTeX support enhance your AI interactions."
+          title="Empower Your AI Experience with Offline Custom LLMs Support"
+          description="Run powerful AI language models in a fully private and isolated environment with a modern, browser-based interface. Designed for sensitive and air-gapped workloads, this solution operates without any external connectivity. Full support for Markdown, LaTeX, and multi-turn conversations is built in."
         />
 
         {/* New Section end */}
