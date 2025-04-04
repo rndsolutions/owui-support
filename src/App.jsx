@@ -2,6 +2,8 @@
 import "@fontsource/inter";
 import PricingTable from "./components/PricingTable";
 import Features from "./components/Features";
+import Contact from "./components/Contact";
+import Hero from "./components/Hero";
 
 export default function OpenWebUIPage() {
   console.log("OpenWebUIPage component is rendering");
@@ -24,14 +26,18 @@ export default function OpenWebUIPage() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative px-6 py-32 text-center bg-gradient-to-br from-neutral-900 via-gray-900 to-black text-white overflow-hidden">
+      <Hero />
+      {/* <section className="relative px-6 py-32 text-center bg-gradient-to-br from-neutral-900 via-gray-900 to-black text-white overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] mix-blend-soft-light"></div>
         <div className="relative z-10">
           <h1 className="text-5xl md:text-6xl font-semibold tracking-tight mb-6">Transform you day-to-day operation with AI Enabled capabiliteis</h1>
           <p className="text-lg md:text-2xl mb-10 text-neutral-300 max-w-3xl mx-auto">Enterprise-grade security. Accelerated innovation. AI solutions designed to empower your teams and transform decision-making.</p>
           <a href="#contact" className="inline-block px-6 py-3 border border-white rounded-full text-white hover:bg-white hover:text-neutral-900 transition font-medium shadow-md">Get Started</a>
         </div>
-      </section>
+      </section> */}
+
+
+
       <div className="h-1 bg-gray-200"></div>
       <section className="py-24 px-6 bg-white" id="contact">
 
@@ -39,6 +45,7 @@ export default function OpenWebUIPage() {
 <section id="ai-benefits" className="py-24 px-6 bg-gradient-to-br from-white to-neutral-100">
           <div className="max-w-6xl mx-auto text-center">
             <h2 className="text-4xl font-semibold mb-12 tracking-tight">The Power of AI for the Enterprise</h2>
+            <p className="text-lg text-neutral-600 mb-8">Our AI solutions empower enterprises to innovate faster, streamline operations, and enhance decision-making processes.</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-left">
               <div className="bg-white border border-neutral-200 p-6 rounded-xl shadow-sm hover:shadow-md transition">
                 <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">Accelerated Decision-Making</h3>
@@ -95,29 +102,6 @@ export default function OpenWebUIPage() {
         <div className="h-1 bg-gray-200"></div>
 
       
-        {/* New Section */}
-        {/* <section id="new-section" className="py-24 px-6 bg-gray-100 text-center">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-semibold mb-12">New Exciting Features</h2>
-            <p className="text-lg text-neutral-600 mb-8">Discover the latest enhancements and capabilities that make our platform even more powerful and user-friendly.</p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-white border border-neutral-200 p-6 rounded-lg shadow-sm">
-                <h3 className="text-xl font-semibold mb-4">Feature One</h3>
-                <p className="text-neutral-600">Description of the first feature, highlighting its benefits and how it can be utilized.</p>
-              </div>
-              <div className="bg-white border border-neutral-200 p-6 rounded-lg shadow-sm">
-                <h3 className="text-xl font-semibold mb-4">Feature Two</h3>
-                <p className="text-neutral-600">Description of the second feature, focusing on its unique aspects and advantages.</p>
-              </div>
-              <div className="bg-white border border-neutral-200 p-6 rounded-lg shadow-sm">
-                <h3 className="text-xl font-semibold mb-4">Feature Three</h3>
-                <p className="text-neutral-600">Description of the third feature, explaining its impact and potential use cases.</p>
-              </div>
-            </div>
-          </div>
-        </section> */}
-
-        
 
         {/* Pricing */}
         <section id="pricing" className="py-24 px-6 bg-white text-center">
@@ -133,16 +117,7 @@ export default function OpenWebUIPage() {
       <div className="h-1 bg-gray-200"></div>
 
       {/* Contacts */}
-      <section className="py-24 px-6 bg-white" id="contact">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-4xl font-semibold mb-4 tracking-tight">Let’s Talk</h2>
-          <p className="mb-10 text-neutral-600">Ready to get started or want a demo? Reach out and we’ll connect with you.</p>
-          <a href="mailto:contact@rnd-solutions.net" className="inline-block px-6 py-3 border border-neutral-900 text-neutral-900 rounded-full hover:bg-neutral-900 hover:text-white transition font-medium">Contact Us</a>
-        </div>
-        <div className="h-1 bg-gray-200"></div>
-        {/* Contact end */}
-
-      </section> {/* Content end */}
+      <Contact />
 
       {/* Footer */}
       <footer className="bg-neutral-900 text-white py-16 px-6">
