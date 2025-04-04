@@ -1,12 +1,14 @@
 
 import "@fontsource/inter";
 import { CarouselCustomArrows } from "./components/Carousel";
+import PricingTable from "./components/PricingTable";
 
 export default function OpenWebUIPage() {
   console.log("OpenWebUIPage component is rendering");
   console.log("Checking if component is rendering correctly");
   return (
     <div className="min-h-screen bg-white text-neutral-900 font-sans">
+
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white shadow-sm border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
@@ -20,6 +22,7 @@ export default function OpenWebUIPage() {
           </nav>
         </div>
       </header>
+
       {/* Hero Section */}
       <section className="relative px-6 py-32 text-center bg-gradient-to-br from-neutral-900 via-gray-900 to-black text-white overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] mix-blend-soft-light"></div>
@@ -30,61 +33,76 @@ export default function OpenWebUIPage() {
         </div>
       </section>
       <div className="h-1 bg-gray-200"></div>
-      <section id="why" className="py-24 px-6 max-w-6xl mx-auto text-center">
-        <h2 className="text-4xl font-semibold mb-12 tracking-tight">Why Choose Our Managed Service?</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
-          <div>
-            <h3 className="text-xl font-medium mb-3">Enterprise-Grade Infrastructure</h3>
-            <p className="text-neutral-600">Deployed on AWS with ECS, RDS (PostgreSQL), and integrated CloudWatch monitoring. Our infrastructure is optimized for performance, scalability, and high availability. You get the robustness of cloud-native architecture without managing it yourself.</p>
-          </div>
-          <div>
-            <h3 className="text-xl font-medium mb-3">GDPR &amp; Security Aligned</h3>
-            <p className="text-neutral-600">Built with security first. ISO 27001-ready and fully compliant with data protection regulations. We implement encryption, access control, and continuous monitoring to ensure your data stays safe and compliant.</p>
-          </div>
-          <div>
-            <h3 className="text-xl font-medium mb-3">Fast Setup, No Overhead</h3>
-            <p className="text-neutral-600">We handle the stack, scaling, and updates—your team gets the power of OpenWebUI instantly. With zero setup time and proactive support, your teams can focus on using AI, not managing it.</p>
-          </div>
-        </div>
-      </section>
-      <div className="h-1 bg-gray-200"></div>
-      <section id="ai-benefits" className="py-24 px-6 bg-gradient-to-br from-white to-neutral-100">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl font-semibold mb-12 tracking-tight">The Power of AI for the Enterprise</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-left">
-            <div className="bg-white border border-neutral-200 p-6 rounded-xl shadow-sm hover:shadow-md transition">
-              <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">Accelerated Decision-Making</h3>
-              <p className="text-neutral-600">Leverage LLMs to surface insights faster, reduce analysis time, and empower every team to move quickly with confidence.</p>
+      <section className="py-24 px-6 bg-white" id="contact">
+
+        {/* Why Section*/}
+        <section id="why" className="py-24 px-6 max-w-6xl mx-auto text-center">
+          <h2 className="text-4xl font-semibold mb-12 tracking-tight">Why Choose Our Managed Service?</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
+            <div>
+              <h3 className="text-xl font-medium mb-3">Enterprise-Grade Infrastructure</h3>
+              <p className="text-neutral-600">Deployed on AWS with ECS, RDS (PostgreSQL), and integrated CloudWatch monitoring. Our infrastructure is optimized for performance, scalability, and high availability. You get the robustness of cloud-native architecture without managing it yourself.</p>
             </div>
-            <div className="bg-white border border-neutral-200 p-6 rounded-xl shadow-sm hover:shadow-md transition">
-              <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">Process Automation</h3>
-              <p className="text-neutral-600">Automate document processing, internal support, reporting, and more—freeing teams from repetitive tasks and boosting output.</p>
+            <div>
+              <h3 className="text-xl font-medium mb-3">GDPR &amp; Security Aligned</h3>
+              <p className="text-neutral-600">Built with security first. ISO 27001-ready and fully compliant with data protection regulations. We implement encryption, access control, and continuous monitoring to ensure your data stays safe and compliant.</p>
             </div>
-            <div className="bg-white border border-neutral-200 p-6 rounded-xl shadow-sm hover:shadow-md transition">
-              <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">Knowledge at Your Fingertips</h3>
-              <p className="text-neutral-600">Make enterprise knowledge instantly accessible to every employee through secure and context-aware natural language interfaces.</p>
+            <div>
+              <h3 className="text-xl font-medium mb-3">Fast Setup, No Overhead</h3>
+              <p className="text-neutral-600">We handle the stack, scaling, and updates—your team gets the power of OpenWebUI instantly. With zero setup time and proactive support, your teams can focus on using AI, not managing it.</p>
             </div>
           </div>
-        </div>
-      </section>
-      <div className="h-1 bg-gray-200"></div>
-      <section className="py-24 px-6 bg-white text-center">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-semibold mb-12">See It In Action</h2>
-          <div className="aspect-w-16 aspect-h-9 w-full rounded-xl overflow-hidden shadow-md border border-neutral-200 bg-neutral-100 flex items-center justify-center">
-            {/* <CarouselCustomArrows /> */}
+        </section>
+        <div className="h-1 bg-gray-200"></div>
+
+        {/* AI Benefits */}
+        <section id="ai-benefits" className="py-24 px-6 bg-gradient-to-br from-white to-neutral-100">
+          <div className="max-w-6xl mx-auto text-center">
+            <h2 className="text-4xl font-semibold mb-12 tracking-tight">The Power of AI for the Enterprise</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-left">
+              <div className="bg-white border border-neutral-200 p-6 rounded-xl shadow-sm hover:shadow-md transition">
+                <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">Accelerated Decision-Making</h3>
+                <p className="text-neutral-600">Leverage LLMs to surface insights faster, reduce analysis time, and empower every team to move quickly with confidence.</p>
+              </div>
+              <div className="bg-white border border-neutral-200 p-6 rounded-xl shadow-sm hover:shadow-md transition">
+                <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">Process Automation</h3>
+                <p className="text-neutral-600">Automate document processing, internal support, reporting, and more—freeing teams from repetitive tasks and boosting output.</p>
+              </div>
+              <div className="bg-white border border-neutral-200 p-6 rounded-xl shadow-sm hover:shadow-md transition">
+                <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">Knowledge at Your Fingertips</h3>
+                <p className="text-neutral-600">Make enterprise knowledge instantly accessible to every employee through secure and context-aware natural language interfaces.</p>
+              </div>
+            </div>
           </div>
-        </div>
+        </section>
+        <div className="h-1 bg-gray-200"></div>
+        {/* AI Benefits end */}
+
+        {/* Pricing */}
+        <section id="pricing" className="py-24 px-6 bg-white text-center">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl font-semibold mb-12">Pricing Tiers</h2>
+            <PricingTable />
+          </div>
+        </section>
+        {/* Pricing end */}
+
       </section>
       <div className="h-1 bg-gray-200"></div>
+
+      {/* Contacts */}
       <section className="py-24 px-6 bg-white" id="contact">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-4xl font-semibold mb-4 tracking-tight">Let’s Talk</h2>
           <p className="mb-10 text-neutral-600">Ready to get started or want a demo? Reach out and we’ll connect with you.</p>
           <a href="mailto:contact@rnd-solutions.net" className="inline-block px-6 py-3 border border-neutral-900 text-neutral-900 rounded-full hover:bg-neutral-900 hover:text-white transition font-medium">Contact Us</a>
         </div>
-      </section>
-      <div className="h-1 bg-gray-200"></div>
+        <div className="h-1 bg-gray-200"></div>
+        {/* Contact end */}
+
+      </section> {/* Content end */}
+
+      {/* Footer */}
       <footer className="bg-neutral-900 text-white py-16 px-6">
         <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 text-sm">
           <div>
@@ -116,6 +134,8 @@ export default function OpenWebUIPage() {
           </div>
         </div>
       </footer>
+      {/* Footer end */}
+
     </div>
   );
 }
