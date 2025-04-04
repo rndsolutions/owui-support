@@ -72,7 +72,7 @@ export default function OpenWebUIPage() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-semibold mb-12">See It In Action</h2>
           <div className="aspect-w-16 aspect-h-9 w-full rounded-xl overflow-hidden shadow-md border border-neutral-200 bg-neutral-100 flex items-center justify-center">
-            <CarouselCustomArrows />
+            {/* <CarouselCustomArrows /> */}
           </div>
         </div>
       </section>
