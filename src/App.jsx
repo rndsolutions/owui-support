@@ -76,6 +76,31 @@ export default function OpenWebUIPage() {
         </section>
         <div className="h-1 bg-gray-200"></div>
         {/* AI Benefits end */}
+     {/* New Section */}
+     <section id="new-section" className="py-24 px-6 bg-gray-100 text-center">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl font-semibold mb-12">New Exciting Features</h2>
+            <p className="text-lg text-neutral-600 mb-8">Discover the latest enhancements and capabilities that make our platform even more powerful and user-friendly.</p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="bg-white border border-neutral-200 p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold mb-4">Feature One</h3>
+                <p className="text-neutral-600">Description of the first feature, highlighting its benefits and how it can be utilized.</p>
+              </div>
+              <div className="bg-white border border-neutral-200 p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold mb-4">Feature Two</h3>
+                <p className="text-neutral-600">Description of the second feature, focusing on its unique aspects and advantages.</p>
+              </div>
+              <div className="bg-white border border-neutral-200 p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold mb-4">Feature Three</h3>
+                <p className="text-neutral-600">Description of the third feature, explaining its impact and potential use cases.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div className="h-1 bg-gray-200"></div>
+        {/* New Section end */}
+
+
 
         {/* Pricing */}
         <section id="pricing" className="py-24 px-6 bg-white text-center">
@@ -86,6 +111,7 @@ export default function OpenWebUIPage() {
         </section>
         {/* Pricing end */}
 
+   
       </section>
       <div className="h-1 bg-gray-200"></div>
 
