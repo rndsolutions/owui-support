@@ -100,7 +100,19 @@ export default function OpenWebUIPage() {
           </div>
         </section> */}
 
-        <Features />
+        <Features
+          orientation="left"
+          imageSrc="/public/owui-dark.png"
+          title="Dark Mode Feature"
+          description="Experience our platform in dark mode, providing a sleek and modern interface that reduces eye strain and enhances focus."
+        />
+        <div className="h-1 bg-gray-200"></div>
+        <Features
+          orientation="right"
+          imageSrc="/public/owui-knowledges.png"
+          title="Knowledge Integration"
+          description="Seamlessly integrate your enterprise knowledge bases, making information readily accessible and actionable for your teams."
+        />
         <div className="h-1 bg-gray-200"></div>
         {/* New Section end */}
 
