@@ -5,6 +5,26 @@ import Features from "./components/Features";
 import Contact from "./components/Contact";
 import Hero from "./components/Hero";
 
+function smoothScrollTo(id) {
+  const target = document.getElementById(id);
+  if (target) {
+    const targetPosition = id === 'contact' ? document.body.scrollHeight : target.offsetTop - 50;
+    const startPosition = window.pageYOffset;
+    const distance = targetPosition - startPosition;
+    const duration = 1000; // duration in milliseconds
+    let start = null;
+
+    window.requestAnimationFrame(function step(timestamp) {
+      if (!start) start = timestamp;
+      const progress = timestamp - start;
+      const progressRatio = Math.min(progress / duration, 1);
+      window.scrollTo(0, startPosition + distance * progressRatio);
+      if (progress < duration) {
+        window.requestAnimationFrame(step);
+      }
+    });
+  }
+}
 export default function OpenWebUIPage() {
   console.log("OpenWebUIPage component is rendering");
   console.log("Checking if component is rendering correctly");
@@ -17,10 +37,10 @@ export default function OpenWebUIPage() {
           <div className="text-lg font-semibold text-neutral-900">Managed <span className="text-blue-600"> AI</span> Services with love <span role="img" aria-label="heart">❤️</span> by R&D Solutions</div>
           <nav className="hidden md:flex gap-6 text-sm font-medium text-neutral-700">
             <a href="#" className="hover:text-blue-600">Home</a>
-            <a href="#" onClick={() => window.scrollTo({ top: document.getElementById('why')?.offsetTop - 50, behavior: 'smooth' })} className="hover:text-blue-600">Why Us</a>
-            <a href="#" onClick={() => window.scrollTo({ top: document.getElementById('ai-benefits')?.offsetTop - 50, behavior: 'smooth' })} className="hover:text-blue-600">AI Benefits</a>
+            <a href="#" onClick={() => smoothScrollTo('why')} className="hover:text-blue-600">Why Us</a>
+            <a href="#" onClick={() => smoothScrollTo('ai-benefits')} className="hover:text-blue-600">AI Benefits</a>
             <a href="#pricing" className="hover:text-blue-600">Pricing</a>
-            <a href="#contact" className="hover:text-blue-600">Contact</a>
+            <a href="#" onClick={() => smoothScrollTo('contact')} className="hover:text-blue-600">Contact</a>
           </nav>
         </div>
       </header>
