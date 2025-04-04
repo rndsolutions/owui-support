@@ -24,20 +24,9 @@ export default function OpenWebUIPage() {
           </nav>
         </div>
       </header>
-      
 
       {/* Hero Section */}
       <Hero videoUrl="https://www.youtube.com/embed/CDiVq3mPZc8?si=ARQb7RaqMQHSveb0" />
-      {/* <section className="relative px-6 py-32 text-center bg-gradient-to-br from-neutral-900 via-gray-900 to-black text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] mix-blend-soft-light"></div>
-        <div className="relative z-10">
-          <h1 className="text-5xl md:text-6xl font-semibold tracking-tight mb-6">Transform you day-to-day operation with AI Enabled capabiliteis</h1>
-          <p className="text-lg md:text-2xl mb-10 text-neutral-300 max-w-3xl mx-auto">Enterprise-grade security. Accelerated innovation. AI solutions designed to empower your teams and transform decision-making.</p>
-          <a href="#contact" className="inline-block px-6 py-3 border border-white rounded-full text-white hover:bg-white hover:text-neutral-900 transition font-medium shadow-md">Get Started</a>
-        </div>
-      </section> */}
-
-
 
       <div className="h-1 bg-gray-200"></div>
       <section className="py-24 px-6 bg-white" id="contact">
@@ -69,8 +58,8 @@ export default function OpenWebUIPage() {
         <Features
           orientation="left"
           imageSrc="/public/owui-dark.png"
-          title="Dark Mode Feature"
-          description="Experience our platform in dark mode, providing a sleek and modern interface that reduces eye strain and enhances focus."
+          title="Team Collaboration & data insights"
+          description="Empower your teams to collaborate more effectively with AI-enhanced context and shared knowledge."
         />
         <div className="h-1 bg-gray-200"></div>
         <Features
@@ -80,6 +69,13 @@ export default function OpenWebUIPage() {
           description="Seamlessly integrate your enterprise knowledge bases, making information readily accessible and actionable for your teams."
         />
         <div className="h-1 bg-gray-200"></div>
+        <Features
+          orientation="left"
+          imageSrc="/public/owui-knowledges.png"
+          title="Empower Your AI Experience with Offline Custom LLM Support"
+          description="We offer a user-friendly, self-hosted interface that allows seamless integration and operation of custom Large Language Models (LLMs) without an internet connection. Its responsive design ensures optimal performance across devices, while features like full Markdown and LaTeX support enhance your AI interactions."
+        />
+
         {/* New Section end */}
 
         {/* Why Section*/}
