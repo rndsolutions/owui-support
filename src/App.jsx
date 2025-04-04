@@ -1,6 +1,7 @@
 
 import "@fontsource/inter";
 import PricingTable from "./components/PricingTable";
+import Features from "./components/Features";
 
 export default function OpenWebUIPage() {
   console.log("OpenWebUIPage component is rendering");
@@ -76,8 +77,9 @@ export default function OpenWebUIPage() {
         </section>
         <div className="h-1 bg-gray-200"></div>
         {/* AI Benefits end */}
-     {/* New Section */}
-     <section id="new-section" className="py-24 px-6 bg-gray-100 text-center">
+
+        {/* New Section */}
+        {/* <section id="new-section" className="py-24 px-6 bg-gray-100 text-center">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-semibold mb-12">New Exciting Features</h2>
             <p className="text-lg text-neutral-600 mb-8">Discover the latest enhancements and capabilities that make our platform even more powerful and user-friendly.</p>
@@ -96,7 +98,9 @@ export default function OpenWebUIPage() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
+
+        <Features />
         <div className="h-1 bg-gray-200"></div>
         {/* New Section end */}
 
@@ -111,7 +115,7 @@ export default function OpenWebUIPage() {
         </section>
         {/* Pricing end */}
 
-   
+
       </section>
       <div className="h-1 bg-gray-200"></div>
 
