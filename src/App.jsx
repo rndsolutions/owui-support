@@ -48,7 +48,7 @@ export default function OpenWebUIPage() {
       </header>
 
       {/* Hero Section */}
-      <Hero videoUrl="https://www.youtube.com/embed/CDiVq3mPZc8?si=ARQb7RaqMQHSveb0" />
+      <Hero videoUrl="https://www.youtube.com/embed/CDiVq3mPZc8?si=ARQb7RaqMQHSveb0" className="w-full h-auto" />
 
       <div className="h-1 bg-gray-200"></div>
       <section className="py-12 px-6 bg-white" id="aiBenefits">
