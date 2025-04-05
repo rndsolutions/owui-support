@@ -35,7 +35,7 @@ export default function OpenWebUIPage() {
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white shadow-sm border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-          <div className="text-lg font-semibold text-neutral-900">Managed <span className="text-blue-600"> AI</span> Services with love <span role="img" aria-label="heart">❤️</span> by R&D Solutions</div>
+          <div className="text-lg font-semibold text-neutral-900">Managed <span className="text-blue-600"> AI</span> Services with love <span role="img" aria-label="heart">❤️</span> by R&amp;D Solutions</div>
           <nav className="hidden md:flex gap-6 text-sm font-medium text-neutral-700">
             <a href="#" className="hover:text-blue-600">Home</a>
             <a href="#" onClick={() => smoothScrollTo('why')} className="hover:text-blue-600">Why Us</a>
@@ -132,7 +132,7 @@ export default function OpenWebUIPage() {
             <ul className="space-y-2 text-neutral-400">
               <li><a href="#" className="hover:text-white">Home</a></li>
               <li><a href="#why" className="hover:text-white">Why Us</a></li>
-              <li><a href="#ai-benefits" className="hover:text-white">AI Benefits</a></li>
+              <li><a href="#" onClick={() => smoothScrollTo('aiBenefits')} className="hover:text-white">AI Benefits</a></li>
               <li><a href="#pricing" className="hover:text-white">Pricing</a></li>
             </ul>
           </div>
@@ -141,7 +141,7 @@ export default function OpenWebUIPage() {
             <ul className="space-y-2 text-neutral-400">
               <li><a href="#contact" className="hover:text-white">Contact</a></li>
               <li><a href="mailto:contact@rnd-solutions.net" className="hover:text-white">Email Us</a></li>
-              <li><a href="#" className="hover:text-white">Documentation</a></li>
+              <li><a href="https://docs.openwebui.com" className="hover:text-white">Docs</a></li>
             </ul>
           </div>
           <div>
@@ -153,6 +153,14 @@ export default function OpenWebUIPage() {
       </footer>
       {/* Footer end */}
 
+      {/* Scroll to Top Button */}
+      <button
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        className="fixed bottom-4 left-4 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 focus:outline-none"
+        aria-label="Scroll to top"
+      >
+        ↑
+      </button>
     </div>
   );
 }
