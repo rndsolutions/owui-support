@@ -27,8 +27,9 @@ jobs:
     - name: Upload build artifacts
       uses: actions/upload-pages-artifact@v3
       with:
-        paths: ./dist 
+        path: ./dist 
 
+        
 
   deploy:
     needs: build
