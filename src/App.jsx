@@ -4,6 +4,7 @@ import PricingTable from "./components/PricingTable";
 import Features from "./components/Features";
 import Contact from "./components/Contact";
 import Hero from "./components/Hero";
+import AIBenefits from "./components/AIBenefits";
 
 function smoothScrollTo(id) {
   const target = document.getElementById(id);
@@ -38,9 +39,10 @@ export default function OpenWebUIPage() {
           <nav className="hidden md:flex gap-6 text-sm font-medium text-neutral-700">
             <a href="#" className="hover:text-blue-600">Home</a>
             <a href="#" onClick={() => smoothScrollTo('why')} className="hover:text-blue-600">Why Us</a>
-            <a href="#" onClick={() => smoothScrollTo('ai-benefits')} className="hover:text-blue-600">AI Benefits</a>
+            <a href="#" onClick={() => smoothScrollTo('aiBenefits')} className="hover:text-blue-600">AI Benefits</a>
             <a href="#pricing" className="hover:text-blue-600">Pricing</a>
-            <a href="#" onClick={() => smoothScrollTo('contact')} className="hover:text-blue-600">Contact</a>
+            <a href="https://docs.openwebui.com" className="hover:text-blue-600">Docs</a>
+            <a href="#" onClick={() => smoothScrollTo('contacts')} className="hover:text-blue-600">Contact</a>            
           </nav>
         </div>
       </header>
@@ -49,29 +51,10 @@ export default function OpenWebUIPage() {
       <Hero videoUrl="https://www.youtube.com/embed/CDiVq3mPZc8?si=ARQb7RaqMQHSveb0" />
 
       <div className="h-1 bg-gray-200"></div>
-      <section className="py-12 px-6 bg-white" id="contact">
+      <section className="py-12 px-6 bg-white" id="aiBenefits">
 
         {/* AI Benefits */}
-        <section id="ai-benefits" className="py-12 px-6 bg-gradient-to-br from-white to-neutral-100">
-          <div className="max-w-6xl mx-auto text-center">
-            <h2 className="text-4xl font-semibold mb-12 tracking-tight">The Power of AI for the Enterprise</h2>
-            <p className="text-lg text-neutral-600 mb-8">Our AI solutions empower enterprises to innovate faster, streamline operations, and enhance decision-making processes.</p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-left">
-              <div className="bg-white border border-neutral-200 p-6 rounded-xl shadow-sm hover:shadow-md transition">
-                <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">Accelerated Decision-Making</h3>
-                <p className="text-neutral-600">Leverage LLMs to surface insights faster, reduce analysis time, and empower every team to move quickly with confidence.</p>
-              </div>
-              <div className="bg-white border border-neutral-200 p-6 rounded-xl shadow-sm hover:shadow-md transition">
-                <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">Process Automation</h3>
-                <p className="text-neutral-600">Automate document processing, internal support, reporting, and more—freeing teams from repetitive tasks and boosting output.</p>
-              </div>
-              <div className="bg-white border border-neutral-200 p-6 rounded-xl shadow-sm hover:shadow-md transition">
-                <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">Knowledge at Your Fingertips</h3>
-                <p className="text-neutral-600">Make enterprise knowledge instantly accessible to every employee through secure and context-aware natural language interfaces.</p>
-              </div>
-            </div>
-          </div>
-        </section>
+        <AIBenefits />
         <div className="h-1 bg-gray-200"></div>
         {/* AI Benefits end */}
 
