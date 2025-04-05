@@ -14,7 +14,7 @@ export default function Hero({ videoUrl }) {
                         Speak to Sales
                     </a>
                 </div>
-                <div className="mt-8 lg:mt-0 lg:col-span-5 flex justify-center">
+                <div className="mt-8 lg:mt-0 lg:col-span-5 flex justify-center w-full h-auto">
                     {videoUrl ? (
                         <iframe
                             width="560"
