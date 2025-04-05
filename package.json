@@ -1,6 +1,7 @@
 {
   "name": "openwebui-final",
   "version": "1.0.0",
+  "homepage": "https://rndsolutions.github.io/owui-support",
   "private": true,
   "scripts": {
     "dev": "vite",
