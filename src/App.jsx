@@ -146,7 +146,7 @@ export default function OpenWebUIPage() {
           </div>
           <div>
             <h3 className="font-semibold mb-4 text-white text-base">Legal</h3>
-            <p className="text-neutral-400 mb-2">OpenWebUI is licensed under BSD 3-Clause. This service is independently managed and maintained by R&amp;D Solutions.</p>
+            <p className="text-neutral-400 mb-2">OpenWebUI is an open-source project licensed under the BSD 3-Clause License. This service is independently managed and maintained by R&amp;D Solutions, ensuring compliance with all licensing terms.</p>
             <p className="text-neutral-500 text-xs">© {new Date().getFullYear()} R&amp;D Solutions. All rights reserved.</p>
           </div>
         </div>
