@@ -15,19 +15,20 @@ export default function Hero({ videoUrl }) {
                     </a>
                 </div>
                 <div className="mt-8 lg:mt-0 lg:col-span-5 flex justify-center w-full h-auto">
-                    {videoUrl ? (
-                        <iframe
-                            width="560"
-                            height="315"
-                            src={videoUrl}
-                            title="YouTube video player"
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                        ></iframe>
-                    ) : (
-                        <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" alt="mockup" />
-                    )}
+                    <div className="relative w-full max-w-md" style={{ paddingBottom: '56.25%', height: 0 }}>
+                        {videoUrl ? (
+                            <iframe
+                                className="absolute top-0 left-0 w-full h-full"
+                                src={videoUrl}
+                                title="YouTube video player"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                            ></iframe>
+                        ) : (
+                            <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" alt="mockup" />
+                        )}
+                    </div>
                 </div>
             </div>
         </section>
