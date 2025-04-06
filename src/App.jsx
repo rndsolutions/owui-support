@@ -60,21 +60,21 @@ export default function OpenWebUIPage() {
 
         <Features
           orientation="left"
-          imageSrc="/owui-support/public/owui-dark.png"
+          imageSrc="/public/owui-dark.png"
           title="Smarter Teams, Sharper Decisions"
           description="Enhance team productivity with shared AI memory, real-time suggestions, and easy access to organizational knowledge. AI adds context to every discussion, turning conversations into actionable insights."
         />
         <div className="h-1 bg-gray-200"></div>
         <Features
           orientation="right"
-          imageSrc="/owui-support/public/owui-knowledges.png"
+          imageSrc="/public/owui-knowledges.png"
           title="Bring Enterprise Knowledge to Your AI Stack"
           description="Whether it's PDFs, structured data, or internal wikis, unify your proprietary knowledge under a private AI interface. Enable secure, offline retrieval augmented generation (RAG) for compliant, high-trust environments. Instant knowledge. No leakage."
         />
         <div className="h-1 bg-gray-200"></div>
         <Features
           orientation="left"
-          imageSrc="/owui-support/public/owui-knowledges.png"
+          imageSrc="/public/owui-knowledges.png"
           title="Empower Your AI Experience with Offline Custom LLMs Support"
           description="Run powerful AI language models in a fully private and isolated environment with a modern, browser-based interface. Designed for sensitive and air-gapped workloads, this solution operates without any external connectivity. Full support for Markdown, LaTeX, and multi-turn conversations is built in."
         />
