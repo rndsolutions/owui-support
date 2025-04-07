@@ -1,3 +1,5 @@
+import { smoothScrollTo } from '../utils/scrollUtils';
+
 export default function PricingTable() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -10,7 +12,7 @@ export default function PricingTable() {
           <li>Open-source LLM Model Options</li>
           <li>Community Support</li>
         </ul>
-        <button className="w-full py-2 px-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Choose Plan</button>
+        <button onClick={() => smoothScrollTo('contacts')} className="w-full py-2 px-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Contact Sales</button>
       </div>
       <div className="border border-gray-200 p-6 rounded-lg shadow-sm">
         <h3 className="text-xl font-semibold mb-4">Pro</h3>
@@ -21,7 +23,7 @@ export default function PricingTable() {
           <li>Open + Hosted LLM Model Options</li>
           <li>24h SLA (email)</li>
         </ul>
-        <button className="w-full py-2 px-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Choose Plan</button>
+        <button onClick={() => smoothScrollTo('contacts')} className="w-full py-2 px-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Contact Sales</button>
       </div>
       <div className="border border-gray-200 p-6 rounded-lg shadow-sm">
         <h3 className="text-xl font-semibold mb-4">Enterprise</h3>
@@ -32,7 +34,7 @@ export default function PricingTable() {
           <li>Custom LLM Model Integrations</li>
           <li>4h SLA (email/chat)</li>
         </ul>
-        <button className="w-full py-2 px-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Contact Sales</button>
+        <button onClick={() => smoothScrollTo('contacts')} className="w-full py-2 px-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Contact Sales</button>
       </div>
     </div>
   );
