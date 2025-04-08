@@ -15,7 +15,7 @@ export default function Hero({ videoUrl }) {
                     </a>
                 </div>
                 <div className="mt-8 lg:mt-0 lg:col-span-5 flex justify-center w-full h-auto">
-                    <div className="relative w-full max-w-md" style={{ paddingBottom: '56.25%', height: 0 }}>
+                    <div className="relative w-full max-w-md lg:max-w-full" style={{ paddingBottom: '56.25%', height: 0 }}>
                         {videoUrl ? (
                             <iframe
                                 className="absolute top-0 left-0 w-full h-full"
