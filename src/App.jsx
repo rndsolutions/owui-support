@@ -18,7 +18,7 @@ export default function OpenWebUIPage() {
         <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">        
           <div className="text-md font-semibold text-neutral-900">  
           <img src="/public/logo-2.png" alt="ContextOps Logo" className="inline-block h-16 max-w-xs mr-1" />          
-            Managed <span className="text-blue-600"> AI</span> Services with <span role="img" aria-label="heart">❤️</span> by R&amp;D Solutions
+            <span className="hidden md:inline">Managed </span><span className="text-blue-600"> AI</span> Services with <span role="img" aria-label="heart">❤️</span> by R&amp;D Solutions
           </div>
           <nav className="hidden md:flex gap-6 text-sm font-medium text-neutral-700">
             <a href="#" className="hover:text-blue-600">Home</a>
