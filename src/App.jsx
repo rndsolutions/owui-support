@@ -27,6 +27,7 @@ export default function OpenWebUIPage() {
             <a href="#pricing" className="hover:text-blue-600">Pricing</a>
             <a href="https://docs.openwebui.com" className="hover:text-blue-600">Docs</a>
             <a href="#" onClick={() => smoothScrollTo('contacts')} className="hover:text-blue-600">Contact</a>            
+            <a href="https://demo.contextops.ai" className="hover:text-blue-600">Sign-In</a>
           </nav>
         </div>
       </header>
