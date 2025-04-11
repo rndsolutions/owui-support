@@ -112,7 +112,7 @@ export default function OpenWebUIPage() {
             <ul className="space-y-2 text-neutral-400">
               <li><a href="#contact" className="hover:text-white">Contact</a></li>
               <li><a href="mailto:contact@rnd-solutions.net" className="hover:text-white">Email Us</a></li>
-              <li><a href="https://docs.openwebui.com" className="hover:text-white">Docs</a></li>
+              <li><a href="https://docs.contextops.ai" className="hover:text-white">Docs</a></li>
             </ul>
           </div>
           <div>
