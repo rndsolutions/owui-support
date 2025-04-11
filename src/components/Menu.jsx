@@ -42,7 +42,7 @@ export default function Menu() {
 				{/* Navigation Menu */}
 				<nav
 					className={`${
-						isMenuOpen ? "block" : "hidden"
+						isMenuOpen ? "block max-w-[220px]" : "hidden"
 					} absolute top-full left-0 w-full bg-white shadow-md lg:static lg:flex lg:gap-6 lg:shadow-none lg:bg-transparent text-sm font-medium text-neutral-700`}
 				>
 					<a href="#" className="ml-auto block px-4 py-2 lg:p-0 hover:text-blue-600">
