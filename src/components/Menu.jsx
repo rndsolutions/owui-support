@@ -65,7 +65,7 @@ export default function Menu() {
 					<a href="#pricing" className="block px-4 py-2 lg:p-0 hover:text-blue-600">
 						Pricing
 					</a>
-					<a href="https://docs.openwebui.com" className="block px-4 py-2 lg:p-0 hover:text-blue-600">
+					<a href="https://docs.contextops.ai" className="block px-4 py-2 lg:p-0 hover:text-blue-600">
 						Docs
 					</a>
 					<a
