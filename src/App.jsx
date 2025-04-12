@@ -49,7 +49,7 @@ export default function OpenWebUIPage() {
           title="Empower Your AI Experience with Offline Custom LLMs Support"
           description="Run powerful AI language models in a fully private and isolated environment with a modern, browser-based interface. Designed for sensitive and air-gapped workloads, this solution operates without any external connectivity. Full support for Markdown, LaTeX, and multi-turn conversations is built in."
         />
-
+        <div className="h-1 bg-gray-200"></div>
         {/* New Section end */}
 
         {/* Why Section*/}
