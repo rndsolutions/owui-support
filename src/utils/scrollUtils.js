@@ -1,7 +1,7 @@
 export function smoothScrollTo(id) {
   const target = document.getElementById(id);
   if (target) {
-    const targetPosition = id === 'contact' ? document.body.scrollHeight : target.offsetTop - 50;
+    const targetPosition = target.offsetTop - 50;
     const startPosition = window.pageYOffset;
     const distance = targetPosition - startPosition;
     const duration = 1000; // duration in milliseconds

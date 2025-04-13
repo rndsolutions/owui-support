@@ -102,8 +102,8 @@ export default function OpenWebUIPage() {
             <h3 className="font-semibold mb-4 text-white text-base">Explore</h3>
             <ul className="space-y-2 text-neutral-400">
               <li><a href="#" className="hover:text-white">Home</a></li>
-              <li><a href="#why" className="hover:text-white">Why Us</a></li>
-              <li><a href="#" onClick={() => smoothScrollTo('aiBenefits')} className="hover:text-white">AI Benefits</a></li>
+              <li><a href="#" onClick={() => smoothScrollTo('why')} className="hover:text-white">Why Us</a></li>
+              <li><a href="#aiBenefits" className="hover:text-white">AI Benefits</a></li>
               <li><a href="#pricing" className="hover:text-white">Pricing</a></li>
             </ul>
           </div>

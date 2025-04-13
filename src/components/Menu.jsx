@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { smoothScrollTo } from "../utils/scrollUtils";	
+
 
 export default function Menu() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
