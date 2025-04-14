@@ -1,74 +1,31 @@
-# OpenWebUI Cloud Managed Service Offering
+## Building and Running the Site
 
-## Overview
+To build and run the site locally, follow these steps:
 
-R&D Solutions presents a dedicated Cloud Managed Service for the OpenWebUI platform, built to empower enterprise teams. Our mission is to help organizations thrive by integrating AI into their day-to-day operations—automating processes, accelerating decision-making, and enabling rapid access to insights. We deliver a scalable, secure, and maintenance-free environment that lets teams focus on innovation, not infrastructure.
+1. **Install Dependencies**: Ensure you have Node.js and npm installed. Then, run the following command to install the project dependencies:
 
-Our platform is designed with enterprise-grade security and privacy in mind. It complies with GDPR best practices and follows ISO 27001-aligned policies, ensuring data protection, controlled access, and adherence to key compliance standards across all environments.
+   ```bash
+   npm install
+   ```
 
----
+2. **Build the Project**: To create a production build of the site, use the following command:
 
-## Managed Cloud Service (OpenWebUI)
+   ```bash
+   npm run build
+   ```
 
-### Description
+3. **Run the Development Server**: To start the development server and view the site locally, use:
 
-A fully managed OpenWebUI deployment hosted in the cloud. We handle infrastructure, security, maintenance, and updates—so your teams can focus on harnessing AI without operational overhead.
+   ```bash
+   npm run dev
+   ```
 
-### Hosting Options
+   This will start the server, and you can view the site by navigating to `http://localhost:3000` in your web browser.
 
-- **Dedicated**: Private, isolated AWS infrastructure for clients needing enhanced performance, custom integrations, or regulatory compliance.
+4. **Run the Production Server**: After building the project, you can run the production server with:
 
-### Core Features
+   ```bash
+   npm run serve
+   ```
 
-- Infrastructure provisioning, configuration, and continuous monitoring
-- Automatic scaling and container orchestration
-- Daily encrypted backups with rapid restoration capabilities
-- Hardened security architecture (TLS 1.2+, IAM, firewalling)
-- Integrated observability via AWS CloudWatch (logs, metrics, alarms)
-- Product lifecycle alignment with official OpenWebUI releases, enabling access to the latest features, updates, and security patches
-
-### Add-Ons *(Available upon request; not included in base pricing)*
-
-- Custom LLM model hosting (fine-tuned or proprietary models)
-- Enterprise data source integration (databases, knowledge bases, file systems)
-- SSO/LDAP identity provider support
-- Private networking and VPC peering
-- API gateway protection and IP whitelisting
-- Advanced analytics and monitoring dashboards
-- High-availability and geographic redundancy setups
-
----
-
-## Pricing Tiers
-
-*The following plans include support, platform management, and access to the OpenWebUI platform. Infrastructure costs (e.g., AWS ECS, RDS, storage, bandwidth) are billed separately based on actual usage.*
-
-| Tier           | Monthly Price | Users Included | LLM Model Options    | Support SLA         | Notes                              |
-| -------------- | ------------- | -------------- | -------------------- | ------------------- | ---------------------------------- |
-| **Starter**    | €299          | 10             | Open-source only     | Community Support   | Best for PoCs and internal testing |
-| **Pro**        | €990          | 50             | Open + hosted models | 24h SLA (email)     | Multi-tenant or dedicated          |
-| **Enterprise** | Custom        | 50+            | Custom integrations  | 4h SLA (email/chat) | Includes onboarding + training     |
-
----
-
-### Infrastructure Sizing Guidelines (Estimated)
-
-| Tier           | ECS Task Size             | RDS Instance (PostgreSQL)        | Monthly AWS Infra Estimate\* |
-| -------------- | ------------------------- | -------------------------------- | ---------------------------- |
-| **Starter**    | 1 vCPU / 2 GB RAM         | db.t3.micro                      | \~€100–€130                  |
-| **Pro**        | 2 vCPU / 4–8 GB RAM       | db.t3.medium or db.t4g.medium    | \~€200–€280                  |
-| **Enterprise** | Custom (4+ vCPU / 16+ GB) | db.m5.large or Aurora Serverless | €500+ (scales with usage)    |
-
-> *Estimates exclude bandwidth, GPU usage, and additional AWS services (e.g., CloudWatch logs, NAT gateway, backups). Actual pricing varies by region and usage.*
-
----
-
-## Technical Stack
-
-- **Cloud Platform**: AWS (ECS for containers, S3 for storage, RDS for PostgreSQL, CloudWatch for monitoring)
-- **Security**: IAM, WAF, TLS 1.2+, encrypted backups
-- **Supported LLMs**: Ollama, OpenAI, Mistral, Claude (via API connectors). Additional models can be integrated upon request.
-- **Scalability**: ECS service auto-scaling with GPU-enabled task definitions for high-performance inference workloads
-
----
-
+   This will serve the built files, allowing you to test the production version of the site.
