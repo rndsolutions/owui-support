@@ -35,7 +35,7 @@ export default function Menu() {
 					<span className="hidden md:inline whitespace-nowrap">Managed </span>
 					<span className="text-blue-600 whitespace-nowrap"> AI</span>
 					<span className=" xs:hidden  whitespace-nowrap">Services with </span>
-					<span role="img" aria-label="heart" className=" xs:hidden whitespace-nowrap">
+					<span role="img" aria-label="heart" className="whitespace-nowrap">
 						❤️
 					</span>
 					<span className="whitespace-nowrap">by R&amp;D Solutions</span>
