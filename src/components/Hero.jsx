@@ -1,9 +1,40 @@
+import { useState, useEffect } from 'react';
+
+function useTypewriterEffect(text, speed) {
+    const [displayedText, setDisplayedText] = useState(''); // Ensure it starts empty
+
+    useEffect(() => {
+        let index = 0;
+        const interval = setInterval(() => {
+            if (index < text.length) {
+                const nextChar = text.charAt(index);
+                console.log(`Appending character: ${nextChar} at index: ${index}`);
+                setDisplayedText((prev) => {
+                    const newText = prev + nextChar;
+                    console.log(`Updated text: ${newText}`);
+                    return newText;
+                });
+                index++;
+            } else {
+                console.log('Completed typing effect');
+                clearInterval(interval);
+            }
+        }, speed);
+        return () => clearInterval(interval);
+    }, [text, speed]);
+
+    return displayedText;
+}
+
 export default function Hero({ videoUrl }) {
+    const displayedText = useTypewriterEffect("AI That Works for Your Enterprise", 100); // Ensure the full text is used
     return (
         <section className="bg-white">
             <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
                 <div className="mr-auto place-self-center lg:col-span-7">
-                    <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">AI That Works for Your Enterprise</h1>
+                    <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">
+                        {displayedText}
+                    </h1>
                     <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">ContextOps.AI empowers users to search, reason, and act with AI—combining natural language search, knowledge management, and custom tool integrations in one intuitive platform!</p>
                     <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">
                         Our platform is still in <span className="text-blue-500">development</span>, but we welcome early <span className="text-red-500">feedback</span>. Give it a try and help us shape the future of AI in enterprises!
