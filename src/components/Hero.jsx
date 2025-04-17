@@ -27,7 +27,7 @@ function useTypewriterEffect(text, speed) {
 }
 
 export default function Hero({ videoUrl }) {
-    const displayedText = useTypewriterEffect("AI That Works for Your Enterprise", 100); // Ensure the full text is used
+    const displayedText = useTypewriterEffect("Context Aware AI Assistants", 100); // Ensure the full text is used
     return (
         <section className="bg-white">
             <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
@@ -52,7 +52,7 @@ export default function Hero({ videoUrl }) {
                 </div>
                 <div className="mt-8 lg:mt-0 lg:col-span-5 flex justify-center w-full h-auto">
                     <div className="relative w-full max-w-lg lg:max-w-full" style={{ paddingBottom: '56.25%', height: 0 }}>
-                        <img src="/public/phonesLogo.png" alt="phones logo" className="absolute top-0 left-0 w-full h-full" />
+                        <img src="/public/hero-520-380.png" alt="phones logo" className="absolute top-0 left-0 w-full h-full object-contain" />
                     </div>
                 </div>
             </div>
