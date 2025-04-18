@@ -24,7 +24,7 @@ export default function Features({
               </p>
               <a
                 href="https://blog.contextops.ai/getting-started-with-contextops-ai/"
-                className="inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900 mb-4"
+                className="inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900 mb-4 w-40"
               >
                 Get Started
                 <svg
@@ -55,7 +55,7 @@ export default function Features({
             <img className="w-full" src={imageSrc} alt="feature image" />
             <a
               href="https://blog.contextops.ai/getting-started-with-contextops-ai/"
-              className="mt-5 inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900"
+              className="mt-5 inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900 w-40"
             >
               Get started
               <svg
