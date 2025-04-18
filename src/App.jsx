@@ -8,8 +8,8 @@ import AIBenefits from "./components/AIBenefits";
 import Menu from "./components/Menu";
 
 import { smoothScrollTo } from './utils/scrollUtils';
-export default function OpenWebUIPage() {
-  console.log("OpenWebUIPage component is rendering");
+export default function MainPage() {
+  console.log("MainPage component is rendering");
   console.log("Checking if component is rendering correctly");
   return (
     <div className="min-h-screen bg-white text-neutral-900 font-sans">
@@ -66,7 +66,7 @@ export default function OpenWebUIPage() {
             </div>
             <div>
               <h3 className="text-xl font-medium mb-3">Quick Setup, No Hassle</h3>
-              <p className="text-neutral-600">We manage the tech, so you can enjoy the benefits of OpenWebUI right away. With no setup time and proactive support, your team can focus on using AI, not managing it.</p>
+              <p className="text-neutral-600">We manage the tech, so you can enjoy the benefits of our platform right away. With no setup time and proactive support, your team can focus on using AI, not managing it.</p>
             </div>
           </div>
         </section>
@@ -117,7 +117,7 @@ export default function OpenWebUIPage() {
           </div>
           <div>
             <h3 className="font-semibold mb-4 text-white text-base">Legal</h3>
-            <p className="text-neutral-400 mb-2">OpenWebUI is an open-source project licensed under the BSD 3-Clause License. This service is independently managed and maintained by R&amp;D Solutions, ensuring compliance with all licensing terms.</p>
+            <p className="text-neutral-400 mb-2">Our platform is an open-source project under the BSD 3-Clause License. Managed by R&amp;D Solutions, we ensure everything runs smoothly and complies with licensing terms.</p>
             <p className="text-neutral-500 text-xs">© {new Date().getFullYear()} R&amp;D Solutions. All rights reserved.</p>
           </div>
         </div>
