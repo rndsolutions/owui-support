@@ -1,7 +1,7 @@
 export default function AIBenefits() {
     return (
         <section className="bg-white">
-            <div className="py-12 px-6 mx-auto max-w-7xl">
+            <div className="py-12 px-4 mx-auto max-w-7xl">
                 <div className="max-w-2xl mb-12">
                     <h2 className="mb-6 text-4xl tracking-tight font-extrabold text-gray-900">Discover the Power of AI for Your Team</h2>
                     <p className="mb-6 font-light text-gray-500 md:text-lg">Our AI tools make everyday tasks easier by automating routine work, unlocking valuable insights, and helping your team make smarter decisions. Let's explore how we can help your team thrive!</p>
