@@ -44,8 +44,7 @@ export default function Hero({ videoUrl }) {
                         and read our 
                         <a href="https://blog.contextops.ai/getting-started-with-contextops-ai/" className="inline-flex items-center justify-center px-6 py-1 text-base font-medium text-center text-black border border-black rounded-lg bg-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-300 lg:ml-2 mx-2">
                             Blog
-                        </a> 
-                        to get started!
+                        </a>                         
                     </p>
                 </div>
                 <div className="mt-8 lg:mt-0 lg:col-span-5 flex justify-center w-full h-auto">
