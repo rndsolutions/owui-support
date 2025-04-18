@@ -31,10 +31,8 @@ export default function Menu() {
 
 				{/* Heading */}
 				<div className="mr-auto text-md font-semibold text-neutral-900 flex gap-1 items-center">
-					<img src="/public/logo-2.png" alt="ContextOps Logo" className="h-16 max-w-xs mr-1" />
-					<span className="hidden md:inline whitespace-nowrap">Managed </span>
-					<span className="text-blue-600 whitespace-nowrap"> AI</span>
-					<span className="  whitespace-nowrap">Services with </span>
+					<img src="/public/logo-2.png" alt="ContextOps Logo" className="h-16 max-w-xs mr-1" />					
+					<span className="  whitespace-nowrap"> With </span>
 					<span role="img" aria-label="heart" className="whitespace-nowrap">
 						❤️
 					</span>
