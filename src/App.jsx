@@ -29,13 +29,7 @@ export default function MainPage() {
         <div className="h-1 bg-gray-200"></div>
         {/* AI Benefits end */}
 
-        <Features
-          orientation="left"
-          imageSrc="/public/owui-dark.png"
-          title="Smarter Teams, Better Decisions"
-          description="Boost your team's productivity with shared AI memory, real-time suggestions, and easy access to knowledge. Our AI adds context to every chat, turning conversations into actionable insights."
-        />
-        <div className="h-1 bg-gray-200"></div>
+      
         <Features
           orientation="right"
           imageSrc="/public/owui-knowledges.png"
@@ -45,6 +39,13 @@ export default function MainPage() {
         <div className="h-1 bg-gray-200"></div>
         <Features
           orientation="left"
+          imageSrc="/public/owui-dark.png"
+          title="Smarter Teams, Better Decisions"
+          description="Boost your team's productivity with shared AI memory, real-time suggestions, and easy access to knowledge. Our AI adds context to every chat, turning conversations into actionable insights."
+        />
+        <div className="h-1 bg-gray-200"></div>
+        <Features
+          orientation="right"
           imageSrc="/public/owui-knowledges.png"
           title="Enhance Your AI Experience with Offline Custom Models"
           description="Run powerful AI models in a private, secure environment with a modern, browser-based interface. Perfect for sensitive tasks, this solution works without external connectivity and supports Markdown, LaTeX, and multi-turn conversations."
