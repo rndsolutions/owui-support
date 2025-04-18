@@ -32,41 +32,41 @@ export default function OpenWebUIPage() {
         <Features
           orientation="left"
           imageSrc="/public/owui-dark.png"
-          title="Smarter Teams, Sharper Decisions"
-          description="Enhance team productivity with shared AI memory, real-time suggestions, and easy access to organizational knowledge. AI adds context to every discussion, turning conversations into actionable insights."
+          title="Smarter Teams, Better Decisions"
+          description="Boost your team's productivity with shared AI memory, real-time suggestions, and easy access to knowledge. Our AI adds context to every chat, turning conversations into actionable insights."
         />
         <div className="h-1 bg-gray-200"></div>
         <Features
           orientation="right"
           imageSrc="/public/owui-knowledges.png"
-          title="Bring Enterprise Knowledge to Your AI Stack"
-          description="Whether it's PDFs, structured data, or internal wikis, unify your proprietary knowledge under a private AI interface. Enable secure, offline retrieval augmented generation (RAG) for compliant, high-trust environments. Instant knowledge. No leakage."
+          title="Bring Team Knowledge to Your AI Stack"
+          description="Whether it's PDFs, structured data, or internal wikis, unify your team's knowledge under a private AI interface. Enjoy secure, offline access to information with no data leakage."
         />
         <div className="h-1 bg-gray-200"></div>
         <Features
           orientation="left"
           imageSrc="/public/owui-knowledges.png"
-          title="Empower Your AI Experience with Offline Custom LLMs Support"
-          description="Run powerful AI language models in a fully private and isolated environment with a modern, browser-based interface. Designed for sensitive and air-gapped workloads, this solution operates without any external connectivity. Full support for Markdown, LaTeX, and multi-turn conversations is built in."
+          title="Enhance Your AI Experience with Offline Custom Models"
+          description="Run powerful AI models in a private, secure environment with a modern, browser-based interface. Perfect for sensitive tasks, this solution works without external connectivity and supports Markdown, LaTeX, and multi-turn conversations."
         />
         <div className="h-1 bg-gray-200"></div>
         {/* New Section end */}
 
         {/* Why Section*/}
         <section id="why" className="py-24 px-6 max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl font-semibold mb-12 tracking-tight">Why Choose Our Managed Service?</h2>
+          <h2 className="text-4xl font-semibold mb-12 tracking-tight">Why Choose Our Service?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
             <div>
-              <h3 className="text-xl font-medium mb-3">Enterprise-Grade Infrastructure</h3>
-              <p className="text-neutral-600">Deployed on AWS with ECS, RDS (PostgreSQL), and integrated CloudWatch monitoring. Our infrastructure is optimized for performance, scalability, and high availability. You get the robustness of cloud-native architecture without managing it yourself.</p>
+              <h3 className="text-xl font-medium mb-3">Robust Infrastructure</h3>
+              <p className="text-neutral-600">Built on AWS with ECS, RDS (PostgreSQL), and integrated CloudWatch monitoring. Our infrastructure is designed for performance, scalability, and high availability, so you can focus on what matters.</p>
             </div>
             <div>
-              <h3 className="text-xl font-medium mb-3">GDPR &amp; Security Aligned</h3>
-              <p className="text-neutral-600">Built with security first. ISO 27001-ready and fully compliant with data protection regulations. We implement encryption, access control, and continuous monitoring to ensure your data stays safe and compliant.</p>
+              <h3 className="text-xl font-medium mb-3">Security &amp; Privacy Focused</h3>
+              <p className="text-neutral-600">Your data's safety is our priority. We ensure compliance with data protection regulations, using encryption, access control, and continuous monitoring to keep your information secure.</p>
             </div>
             <div>
-              <h3 className="text-xl font-medium mb-3">Fast Setup, No Overhead</h3>
-              <p className="text-neutral-600">We handle the stack, scaling, and updates—your team gets the power of OpenWebUI instantly. With zero setup time and proactive support, your teams can focus on using AI, not managing it.</p>
+              <h3 className="text-xl font-medium mb-3">Quick Setup, No Hassle</h3>
+              <p className="text-neutral-600">We manage the tech, so you can enjoy the benefits of OpenWebUI right away. With no setup time and proactive support, your team can focus on using AI, not managing it.</p>
             </div>
           </div>
         </section>

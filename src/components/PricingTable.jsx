@@ -5,7 +5,7 @@ export default function PricingTable() {
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
       <div className="border border-gray-200 p-6 rounded-lg shadow-sm">
         <h3 className="text-xl font-semibold mb-4">Starter</h3>
-        <p className="text-neutral-600 mb-4">Best for PoCs and internal testing.</p>
+        <p className="text-neutral-600 mb-4">Great for small teams and personal projects.</p>
         <p className="text-2xl font-bold mb-4">Perfect for 10+ users</p>
         <ul className="text-neutral-600 mb-6">
           <li>Empower your team</li>
@@ -16,7 +16,7 @@ export default function PricingTable() {
       </div>
       <div className="border border-gray-200 p-6 rounded-lg shadow-sm">
         <h3 className="text-xl font-semibold mb-4">Pro</h3>
-        <p className="text-neutral-600 mb-4">Multi-tenant or dedicated.</p>
+        <p className="text-neutral-600 mb-4">Perfect for growing teams.</p>
         <p className="text-2xl font-bold mb-4">Ideal for 50+ users</p>
         <ul className="text-neutral-600 mb-6">
           <li>Scale your operations</li>
@@ -27,7 +27,7 @@ export default function PricingTable() {
       </div>
       <div className="border border-gray-200 p-6 rounded-lg shadow-sm">
         <h3 className="text-xl font-semibold mb-4">Enterprise</h3>
-        <p className="text-neutral-600 mb-4">Includes onboarding + training.</p>
+        <p className="text-neutral-600 mb-4">Includes personalized support and training.</p>
         <p className="text-2xl font-bold mb-4">Tailored for enterprises</p>
         <ul className="text-neutral-600 mb-6">
           <li>Unlimited users</li>
