@@ -34,7 +34,7 @@ export default function Menu() {
 					<img src="/public/logo-2.png" alt="ContextOps Logo" className="h-16 max-w-xs mr-1" />
 					<span className="hidden md:inline whitespace-nowrap">Managed </span>
 					<span className="text-blue-600 whitespace-nowrap"> AI</span>
-					<span className=" xs:hidden  whitespace-nowrap">Services with </span>
+					<span className="  whitespace-nowrap">Services with </span>
 					<span role="img" aria-label="heart" className="whitespace-nowrap">
 						❤️
 					</span>
