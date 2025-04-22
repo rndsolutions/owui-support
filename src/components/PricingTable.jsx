@@ -13,7 +13,7 @@ export default function PricingTable() {
           <li>Community support</li>
           <li>Regular updates</li>
         </ul>
-        <button onClick={() => smoothScrollTo('contacts')} className="w-full py-2 px-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Contact Sales</button>
+        <a href="https://demo.contextops.ai" className="w-full py-2 px-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition text-center block">Sign-Up</a>
       </div>
       <div className="border border-gray-200 p-6 rounded-lg shadow-sm">
         <h3 className="text-xl font-semibold mb-4">Enterprise</h3>
