@@ -7,7 +7,7 @@ export default function PricingTable() {
       <div className="border border-gray-200 p-6 rounded-lg shadow-sm">
         <h3 className="text-xl font-semibold mb-4">Individual</h3>
         <p className="text-neutral-600 mb-4">Ideal for individual users.</p>
-        <p className="text-2xl font-bold mb-4">$25/mo</p>
+        <p className="text-2xl font-bold mb-4">$30/mo</p>
         <ul className="text-neutral-600 mb-6">
           <li>Access to all features</li>
           <li>Community support</li>
