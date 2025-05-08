@@ -75,7 +75,7 @@ export default function Menu() {
 					>
 						Contact
 					</a>
-					<a href="https://demo.contextops.ai" className="block px-4 py-2 lg:p-0 hover:text-blue-600">
+					<a href="https://app.contextops.ai" className="block px-4 py-2 lg:p-0 hover:text-blue-600">
 						Sign-In
 					</a>
 				</nav>
