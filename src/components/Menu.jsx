@@ -62,12 +62,7 @@ export default function Menu() {
 					>
 						AI Benefits
 					</a>
-					<a href="#pricing" className="block px-4 py-2 lg:p-0 hover:text-blue-600">
-						Pricing
-					</a>
-					<a href="https://blog.contextops.ai" className="block px-4 py-2 lg:p-0 hover:text-blue-600">
-						Blog
-					</a>
+			
 					<a
 						href="#"
 						onClick={() => smoothScrollTo("contacts")}
@@ -75,9 +70,7 @@ export default function Menu() {
 					>
 						Contact
 					</a>
-					<a href="https://app.contextops.ai" className="block px-4 py-2 lg:p-0 hover:text-blue-600">
-						Sign-In
-					</a>
+					
 				</nav>
 			</div>
 		</header>

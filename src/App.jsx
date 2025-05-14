@@ -32,22 +32,22 @@ export default function MainPage() {
         <Features
           orientation="right"
           imageSrc="/public/owui-knowledges.png"
-          title="Bring Team Knowledge to Your AI Stack"
-          description="Whether it's PDFs, structured data, or internal wikis, unify your team's knowledge under a private AI interface. Enjoy secure, offline access to information with no data leakage."
+          title="🏛️ Centralize Your Legal Knowledge with AI"
+          description="Whether it's contracts, memos, compliance policies, or internal playbooks — bring your legal team's expertise into one secure AI workspace. ContextOps.ai ensures private, on-demand access to institutional knowledge with no data leakage or external exposure."
         />
         <div className="h-1 bg-gray-200"></div>
         <Features
           orientation="left"
           imageSrc="/public/owui-dark.png"
-          title="Smarter Teams, Better Decisions"
-          description="Boost your team's productivity with shared AI memory, real-time suggestions, and easy access to knowledge. Our AI adds context to every chat, turning conversations into actionable insights."
+          title="🧠 Smarter Legal Teams, Faster Decisions"
+          description="Accelerate legal workflows with AI-powered context, real-time clause suggestions, and instant access to institutional knowledge. ContextOps.ai adds legal insight to every interaction — turning routine reviews into strategic decisions."
         />
         <div className="h-1 bg-gray-200"></div>
         <Features
           orientation="right"
           imageSrc="/public/owui-knowledges.png"
-          title="Enhance Your AI Experience with Offline Custom Models"
-          description="Run powerful AI models in a private, secure environment with a modern, browser-based interface. Perfect for sensitive tasks, this solution works without external connectivity and supports Markdown, LaTeX, and multi-turn conversations."
+          title="🛡️ Deploy Legal AI Your Way — Cloud, Hybrid, or Private"
+          description="ContextOps.ai adapts to your legal team’s infrastructure and compliance needs. Whether you require cloud-based simplicity, hybrid security, or a fully private deployment, our platform gives you full control — without sacrificing performance or privacy."
         />
         <div className="h-1 bg-gray-200"></div>
         {/* New Section end */}
@@ -55,38 +55,31 @@ export default function MainPage() {
         {/* Why Section*/}
         <section id="why" className="py-24 px-6 max-w-6xl mx-auto text-center">
           <h2 className="text-4xl font-semibold mb-12 tracking-tight">
-            Why Choose Our Service?
+            Why Choose ContextOps.ai?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
             <div>
               <h3 className="text-xl font-medium mb-3">
-                Robust Infrastructure
+                🏗️ Built for Legal-Grade Performance
               </h3>
               <p className="text-neutral-600">
-                Built on AWS with ECS, RDS (PostgreSQL), and integrated
-                CloudWatch monitoring. Our infrastructure is designed for
-                performance, scalability, and high availability, so you can
-                focus on what matters.
+                Hosted on secure, scalable infrastructure with enterprise-grade reliability. ContextOps.ai ensures your legal workflows stay fast, available, and responsive — even during high-volume contract reviews.
               </p>
             </div>
             <div>
               <h3 className="text-xl font-medium mb-3">
-                Security &amp; Privacy Focused
+                🔐 Security & Compliance by Design
               </h3>
               <p className="text-neutral-600">
-                Your data's safety is our priority. We ensure compliance with
-                data protection regulations, using encryption, access control,
-                and continuous monitoring to keep your information secure.
+                Your legal data stays protected with end-to-end encryption, strict access controls, and full GDPR alignment. ContextOps.ai is built for teams where confidentiality isn’t optional — it’s mission-critical.
               </p>
             </div>
             <div>
               <h3 className="text-xl font-medium mb-3">
-                Quick Setup, No Hassle
+                ⚙️ Fast Deployment, Zero Overhead
               </h3>
               <p className="text-neutral-600">
-                We manage the tech, so you can enjoy the benefits of our
-                platform right away. With no setup time and proactive support,
-                your team can focus on using AI, not managing it.
+                No complex setup, no IT headaches. Our platform plugs into your existing document tools — so your team can start reviewing contracts, drafting memos, and analyzing risk within minutes.
               </p>
             </div>
           </div>
@@ -94,15 +87,15 @@ export default function MainPage() {
         <div className="h-1 bg-gray-200"></div>
 
         {/* Pricing */}
-        <section id="pricing" className="py-24 px-6 bg-white text-center">
+        {/* <section id="pricing" className="py-24 px-6 bg-white text-center">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-semibold mb-12">Pricing Tiers</h2>
             <PricingTable />
           </div>
-        </section>
+        </section> */}
         {/* Pricing end */}
       </section>
-      <div className="h-1 bg-gray-200"></div>
+      {/* <div className="h-1 bg-gray-200"></div> */}
 
       {/* Contacts */}
       <Contact />

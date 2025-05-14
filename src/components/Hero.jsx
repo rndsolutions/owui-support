@@ -27,7 +27,7 @@ function useTypewriterEffect(text, speed) {
 }
 
 export default function Hero({ videoUrl }) {
-    const displayedText = useTypewriterEffect("Context Aware AI Assistant", 100); // Ensure the full text is used
+    const displayedText = useTypewriterEffect("AI Assistant Built for Busy Legal Teams", 100); // Ensure the full text is used
     return (
         <section className="bg-white">
             <div className="grid max-w-screen-xl px-6 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
@@ -35,7 +35,7 @@ export default function Hero({ videoUrl }) {
                     <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">
                         {displayedText}
                     </h1>
-                    <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">ContextOps.AI helps you search, think, and act with AI—combining natural language search, knowledge management, and custom tool integrations in one easy-to-use platform!</p>
+                    <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">Review contracts, draft documents, summarize policies, and manage legal workflows — faster, smarter, and with full control.</p>
                     <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">
                         <a href="https://app.contextops.ai" className="inline-flex items-center justify-center px-4 py-1 text-base font-medium text-center text-white border border-black rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 mx-2">
                             Sign-Up
