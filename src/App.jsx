@@ -138,9 +138,7 @@ export default function MainPage() {
                 </a>
               </li>
               <li>
-                <a href="#pricing" className="hover:text-white">
-                  Pricing
-                </a>
+                
               </li>
             </ul>
           </div>

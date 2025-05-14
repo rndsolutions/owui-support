@@ -1,3 +1,4 @@
+import { smoothScrollTo } from '../utils/scrollUtils'; 
 export default function Features({
   orientation = "left",
   imageSrc,
@@ -22,8 +23,8 @@ export default function Features({
               <p className="mb-6 font-light text-gray-500 md:text-lg">
                 {description}
               </p>
-              <a
-                href="https://blog.contextops.ai/getting-started-with-contextops-ai/"
+              <button
+                onClick={() => smoothScrollTo("contacts")}
                 className="inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900 mb-4 w-40"
               >
                 Get Started
@@ -39,7 +40,7 @@ export default function Features({
                     clipRule="evenodd"
                   ></path>
                 </svg>
-              </a>
+              </button>
             </div>
           </>
         ) : (
@@ -53,8 +54,8 @@ export default function Features({
               </p>
             </div>
             <img className="w-full" src={imageSrc} alt="feature image" />
-            <a
-              href="https://blog.contextops.ai/getting-started-with-contextops-ai/"
+            <button
+              onClick={() => smoothScrollTo("contacts")}
               className="mt-5 inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900 w-40"
             >
               Get started
@@ -70,7 +71,7 @@ export default function Features({
                   clipRule="evenodd"
                 ></path>
               </svg>
-            </a>
+            </button>
           </>
         )}
       </div>
