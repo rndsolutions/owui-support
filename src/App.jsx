@@ -31,21 +31,21 @@ export default function MainPage() {
 
         <Features
           orientation="right"
-          imageSrc="/public/owui-knowledges.png"
+          imageSrc="/public/knowledge_ai.png"
           title="🏛️ Centralize Your Legal Knowledge with AI"
           description="Whether it's contracts, memos, compliance policies, or internal playbooks — bring your legal team's expertise into one secure AI workspace. ContextOps.ai ensures private, on-demand access to institutional knowledge with no data leakage or external exposure."
         />
         <div className="h-1 bg-gray-200"></div>
         <Features
           orientation="left"
-          imageSrc="/public/owui-dark.png"
+          imageSrc="/public/smarter_team.png"
           title="🧠 Smarter Legal Teams, Faster Decisions"
           description="Accelerate legal workflows with AI-powered context, real-time clause suggestions, and instant access to institutional knowledge. ContextOps.ai adds legal insight to every interaction — turning routine reviews into strategic decisions."
         />
         <div className="h-1 bg-gray-200"></div>
         <Features
           orientation="right"
-          imageSrc="/public/owui-knowledges.png"
+          imageSrc="/public/security.png"
           title="🛡️ Deploy Legal AI Your Way — Cloud, Hybrid, or Private"
           description="ContextOps.ai adapts to your legal team’s infrastructure and compliance needs. Whether you require cloud-based simplicity, hybrid security, or a fully private deployment, our platform gives you full control — without sacrificing performance or privacy."
         />
