@@ -7,6 +7,7 @@ function useTypewriterEffect(text, speed) {
 
     useEffect(() => {
         let index = 0;
+          setDisplayedText(''); // ✅ Reset text when input changes
         const interval = setInterval(() => {
             if (index < text.length) {
                 const nextChar = text.charAt(index);
@@ -27,12 +28,7 @@ function useTypewriterEffect(text, speed) {
 }
 
 export default function Hero({ videoUrl }) {
-    const { t } = useTranslation();
-    const videoSrc =
-        t === 'bg'
-            ? 'https://www.loom.com/embed/0f13d82c44e34692acb3bb94f5d1aa69'
-            : 'https://www.loom.com/share/30012d67d8534cf88c7e974bca82f199?sid=e7fc8ba4-ccc9-4288-8b68-3cab193ed624';
-
+    const { t, i18n } = useTranslation();
     const displayedText = useTypewriterEffect(t('hero.title'), 100); // Ensure the full text is used
     return (
         <section className="bg-white">
@@ -52,25 +48,41 @@ export default function Hero({ videoUrl }) {
                 </div>
                 <div className="mt-8 lg:mt-0 lg:col-span-5 flex justify-center w-full h-auto">
                     <div className="relative w-full max-w-lg lg:max-w-full" style={{ paddingBottom: '56.25%', height: 0 }}>
+                        {i18n.language  === 'bg' ? (
+                            <iframe
+                                width="100%"
+                                height="400"
+                                src="https://www.loom.com/embed/0f13d82c44e34692acb3bb94f5d1aa69?sid=112a03b8-72b0-4ce7-8d29-9f881506fc6b"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                                title="Video BG"
+                            ></iframe>
+                        ) : (
+                            <iframe
+                                width="100%"
+                                height="400"
+                                src="https://www.loom.com/embed/30012d67d8534cf88c7e974bca82f199?sid=333acb5d-678d-4c4c-81c7-dbe1634e08b6"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                                title="Video EN"
+                            ></iframe>
+                        )}
                         {/* <iframe
-                            src="https://www.loom.com/share/0f13d82c44e34692acb3bb94f5d1aa69?sid=036a9f80-093f-461f-bdbd-731351ae6458"
-                            frameborder="0"
-                            webkitallowfullscreen
-                            mozallowfullscreen
-                            allowfullscreen
                             width="100%"
                             height="400"
+                            src="https://www.youtube.com/embed/o2lH2eu6ezg"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                            style={{ display: i18n.language  === 'bg' ? 'block' : 'none' }}
+                        ></iframe>
+                        <iframe
+                            width="100%"
+                            height="400"
+                            src="https://www.youtube.com/embed/73uNYFlTmwA"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                            style={{ display: i18n.language  === 'bg' ? 'none' : 'block' }}
                         ></iframe> */}
-                        {/* en */}
-                    <iframe
-                        src="https://www.loom.com/share/30012d67d8534cf88c7e974bca82f199?sid=e7fc8ba4-ccc9-4288-8b68-3cab193ed624"
-                        frameborder="0"
-                        webkitallowfullscreen
-                        mozallowfullscreen
-                        allowfullscreen
-                        width="100%"
-                        height="400"
-                    ></iframe>
                     </div>
                 </div>
             </div>
