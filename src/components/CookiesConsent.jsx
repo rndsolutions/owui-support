@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function CookiesConsent() {
   const [isOpen, setIsOpen] = useState(true);
-
+  const { t } = useTranslation();
   if (!isOpen) return null;
 
   return (
@@ -33,7 +34,7 @@ export default function CookiesConsent() {
               <p className="ml-3 font-medium text-white truncate">
                 <span className="md:hidden">We use cookies for better service.</span>
                 <span className="hidden md:inline">
-                  We use cookies to ensure you get the best experience on our website.
+                  {t("cookiesConsent.message")}
                 </span>
               </p>
             </div>
@@ -42,7 +43,7 @@ export default function CookiesConsent() {
                 href="https://blog.contextops.ai/privacy/"
                 className="flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-indigo-600 bg-white hover:bg-indigo-50"
               >
-                Learn more
+                {t("buttons.learnMore")}
               </a>
             </div>
             <div className="order-2 flex-shrink-0 sm:order-3 sm:ml-2">
