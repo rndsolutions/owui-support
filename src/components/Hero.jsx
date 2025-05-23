@@ -47,7 +47,7 @@ export default function Hero({ videoUrl }) {
                     </p>
                 </div>
                 <div className="mt-8 lg:mt-0 lg:col-span-5 flex justify-center w-full h-auto">
-                    <div className="relative w-full max-w-lg lg:max-w-full" style={{ paddingBottom: '56.25%', height: 0 }}>
+                  <div className="w-full aspect-video max-w-lg lg:max-w-full">
                         {i18n.language  === 'bg' ? (
                             <iframe
                                 width="100%"
@@ -67,22 +67,6 @@ export default function Hero({ videoUrl }) {
                                 title="Video EN"
                             ></iframe>
                         )}
-                        {/* <iframe
-                            width="100%"
-                            height="400"
-                            src="https://www.youtube.com/embed/o2lH2eu6ezg"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                            style={{ display: i18n.language  === 'bg' ? 'block' : 'none' }}
-                        ></iframe>
-                        <iframe
-                            width="100%"
-                            height="400"
-                            src="https://www.youtube.com/embed/73uNYFlTmwA"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                            style={{ display: i18n.language  === 'bg' ? 'none' : 'block' }}
-                        ></iframe> */}
                     </div>
                 </div>
             </div>
